@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trang chủ</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light">
+    	<div class="collapse navbar-collapse" id="navbarMenu">
+	      	<ul class="navbar-nav ml-3">
+	        	<li class="nav-item">
+	          		<a class="nav-link" href="#" data-toggle="modal" data-target="#popupMenu">
+	            		<i class="fas fa-bars"></i> Menu
+	          		</a>
+	        	</li>
+	      	</ul>
+	      	<form class="form-inline ml-3" action="/list" method="get">
+	        	<input name="item" id="search-input" class="form-control" type="search" placeholder="Tìm kiếm">
+	        	<button id="search-button" class="btn navbarbtn" type="submit">
+	        	  	<img src="/search.png" alt="Search" class="btnimages">
+	        	</button>
+	      	</form>
+			<form action="/home" method="get">
+			  	<button id="theanh" class="btn" type="submit">
+			    	<img src="/theanhshop.png" alt="The Anh Shop" class="theanhimage">
+			  	</button>
+			</form>
+			<form >
+		      	<button type="button" id="giohang-button" class="btn navbarbtn" data-toggle="modal" data-target="#popupGioHang">
+		        	<img src="/giohang.png" alt="Giỏ hàng" class="btnimages">
+		      	</button>
+		    </form>
+    	</div>
+	</nav>
+
+	<div class="modal fade" id="popupMenu" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<h5 class="modal-title" id="popupModalLabel">Menu</h5>
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        			</button>
+      			</div>
+      			<div class="modal-body">
+        			<div class="btn-group-vertical">
+          				<form action="/list" method="get">
+          					<button class="btn btn-light btn-block popupbutton" type="submit">Tất cả</button>
+          				</form>
+          				<form>
+          					<button class="btn btn-light btn-block popupbutton" type="button" data-toggle="modal" data-target="#popupCategory">Loại</button>
+          				</form>
+          				<form action="/list" method="get">
+          					<button class="btn btn-light btn-block popupbutton" type="submit">Sale</button>
+          				</form>
+          				<form action="/login" method="get">
+          					<button class="btn btn-light btn-block popupbutton" type="submit">Đăng xuất</button>
+          				</form>
+        			</div>
+      			</div>
+    		</div> 
+  		</div>
+	</div>
+
+	<div class="modal fade" id="popupCategory" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<h5 class="modal-title" id="popupModalLabel">Category</h5>
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        			</button>
+      			</div>
+      			<div class="modal-body">
+        			<div class="btn-group-vertical">
+          				<form action="/category" method="get">
+          					<button class="btn btn-light btn-block popupbutton" type="submit">Quần</button>
+          				</form>
+          				<form action="/category" method="get">
+          					<button class="btn btn-light btn-block popupbutton" type="submit">Áo</button>
+          				</form>
+          				<form action="/category" method="get">
+          					<button class="btn btn-light btn-block popupbutton" type="submit">Giày</button>
+          				</form>
+          				<form action="/category" method="get">
+          					<button class="btn btn-light btn-block popupbutton" type="submit">Kính</button>
+          				</form>
+          				<form action="/category" method="get">
+          					<button class="btn btn-light btn-block popupbutton" type="submit">Mũ</button>
+          				</form>
+          				<form action="/category" method="get">
+          					<button class="btn btn-light btn-block popupbutton" type="submit">Túi Xách</button>
+          				</form>
+        			</div>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+ 	<div class="modal fade" id="popupGioHang" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel"aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+      		<div class="modal-content">
+        		<div class="modal-header">
+          			<h5 class="modal-title" id="popupModalLabel">Giỏ hàng</h5>
+          			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            			<span aria-hidden="true">&times;</span>
+          			</button>
+        		</div>
+        		<div class="modal-body">
+          			<ul class="list-group">
+            			<li class="list-group-item">Item 1</li>
+            			<li class="list-group-item">Item 2</li>
+            			<li class="list-group-item">Item 3</li>
+          			</ul>
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+          			<button type="button" class="btn btn-primary">Mua</button>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+  	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+#search-input {
+  width: 200px;
+}
+#navbar{
+	  height: 80px;
+}
+.navbarMenu{
+	height: 80px;
+}
+#search-button {
+  width: 40px;
+}
+#giohang-button{
+	position: absolute;
+	right: 30px;
+}
+#d-image {
+  width: 100%;
+}
+
+#theanh {
+  top: 20px;
+  width: 400px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbarbtn{
+	top: 10px;
+	width: 40px;
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
+}
+.theanhimage{
+	width: 100%;
+}
+
+.btnimages{
+	width: 275%;
+}
+
+#ft{
+	text-align: right;
+    padding: 20px 20px;
+}
+
+/* Tùy chỉnh cho phần banner quảng cáo */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2; /* Nền màu xám cho banner quảng cáo */
+  padding: 20px; /* Khoảng cách lề cho phần banner */
+}
+
+/* Tùy chỉnh cho ảnh trong banner */
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tùy chỉnh cho phần danh sách sản phẩm */
+.container {
+  background-color: #f9f9f9; /* Nền màu xám cho phần dưới banner */
+  max-width: 100%;
+  padding: 20px; /* Khoảng cách lề cho phần dưới banner */
+}
+
+/* Tùy chỉnh cho các ô sản phẩm trong danh sách */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff; /* Nền màu trắng cho ô sản phẩm */
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
