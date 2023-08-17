@@ -18,12 +18,19 @@ public class Product {
 	private String name;
 	private String size;
 	private String quantity;
-	private String price;
+	private int price;
 	private String madefrom;
 	private String color;
 	private String note;
 	private String url;
 	private String category;
+	private int sale;
+	public int getSale() {
+		return sale;
+	}
+	public void setSale(int sale) {
+		this.sale = sale;
+	}
 	public String getCategory() {
 		return category;
 	}
@@ -60,10 +67,10 @@ public class Product {
 	public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
-	public String getPrice() {
+	public int getPrice() {
 		return price;
 	}
-	public void setPrice(String price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 	public String getMadefrom() {

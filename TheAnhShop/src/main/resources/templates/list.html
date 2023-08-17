@@ -10,11 +10,14 @@
 <body>
 	<th:block th:include="template.html"></th:block>
 <div class="banner">
-	<img id="d-image" src="banner.jpg" alt="Hình nền">
+	<img id="d-image" src="/banner.jpg" alt="Hình nền">
 </div>
-     <div id="ft" class="filter">
-        <form action="/list" method="get">
-        	<!-- <p th:text="th:value="${item}""></p> -->
+    <div id="ft" class="filter">
+       	<form action="/list" method="get">
+        	<input type="hidden" name="item" th:value="${item}" />
+        	<input type="hidden" name="category" th:value="${category}"/>
+        	<input type="hidden" name="sale" th:value="${sale}" />
+        	<input type="hidden" name="username" th:value="${username}"/>
             <label for="sortPrice">Sắp xếp theo giá:</label>
             <select id="sortPrice" name="sort">
                 <option value="">Chọn</option>
@@ -34,10 +37,32 @@
 			        	<h5 th:text="${product.category} + ' ' +${product.name}"></h5>
 			        	<p th:text="'Giá: ' + ${product.price} + ' VNĐ'"></p>
 	        		</div>
+	        		<div class="card-footer">
+                    	<form action="/addcart" method="get">
+                    		<input type="hidden" name="username" th:value="${username}"/>
+                      	  	<input type="hidden" name="productCartId" th:value="${product.id}" />
+                     	   	<button type="submit" class="btn btn-primary btn-block">Buy</button>
+                    	</form>
+                	</div>
+					<div class="card-footer">
+					    <form action="/edit" method="get">
+					    	<input type="hidden" name="username" th:value="${username}"/>
+                      	  	<input type="hidden" name="productEditId" th:value="${product.id}" />
+                     	   	<button type="submit" class="btn btn-primary btn-block">Sửa</button>
+                    	</form>
+					</div>
+					<div class="card-footer">
+					    <form action="/delete" method="get">
+					    	<input type="hidden" name="username" th:value="${username}"/>
+                      	  	<input type="hidden" name="productDeleteId" th:value="${product.id}" />
+                     	   	<button type="submit" class="btn btn-primary btn-block">Xóa</button>
+                    	</form>
+					</div>
 	      		</div>
 	    	</div>
 	  	</div>
 	</div>
+
   	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

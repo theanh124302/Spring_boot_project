@@ -15,6 +15,7 @@ public class Detail {
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@Column(unique = true)
 	private int oid;
 	private int pid;
 	private int quantity;

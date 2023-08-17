@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Trang chủ</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light">
@@ -18,6 +18,9 @@
 	        	</li>
 	      	</ul>
 	      	<form class="form-inline ml-3" action="/list" method="get">
+	      		<input type="hidden" name="username" th:value="${username}"/>
+	      		<input type="hidden" name="category"/>
+	      		<input type="hidden" name="sale" th:value="0" />
 	        	<input name="item" id="search-input" class="form-control" type="search" placeholder="Tìm kiếm">
 	        	<button id="search-button" class="btn navbarbtn" type="submit">
 	        	  	<img src="/search.png" alt="Search" class="btnimages">
@@ -47,14 +50,23 @@
       			</div>
       			<div class="modal-body">
         			<div class="btn-group-vertical">
-          				<form action="/list" method="get">
+          				<form action="/list/all" method="get">
+          					<input type="hidden" name="username" th:value="${username}"/>
+          					<input type="hidden" name="item"/>
+          					<input type="hidden" name="category"/>
+          					<input type="hidden" name="sale"/>
           					<button class="btn btn-light btn-block popupbutton" type="submit">Tất cả</button>
           				</form>
           				<form>
           					<button class="btn btn-light btn-block popupbutton" type="button" data-toggle="modal" data-target="#popupCategory">Loại</button>
           				</form>
-          				<form action="/list" method="get">
+          				<form action="/list/sale" method="get">
+          					<input type="hidden" name="username" th:value="${username}"/>
           					<button class="btn btn-light btn-block popupbutton" type="submit">Sale</button>
+          				</form>
+          				<form action="/new" method="get">
+          					<input type="hidden" name="username" th:value="${username}"/>
+          					<button class="btn btn-light btn-block popupbutton" type="submit">Thêm sản phẩm</button>
           				</form>
           				<form action="/login" method="get">
           					<button class="btn btn-light btn-block popupbutton" type="submit">Đăng xuất</button>
@@ -76,22 +88,34 @@
       			</div>
       			<div class="modal-body">
         			<div class="btn-group-vertical">
-          				<form action="/category" method="get">
+          				<form action="/list/category" method="get">
+          					<input type="hidden" name="category" th:value="Quần" />
+          					<input type="hidden" name="username" th:value="${username}"/>
           					<button class="btn btn-light btn-block popupbutton" type="submit">Quần</button>
           				</form>
-          				<form action="/category" method="get">
+          				<form action="/list/category" method="get">
+          					<input type="hidden" name="category" th:value="Áo" />
+          					<input type="hidden" name="username" th:value="${username}"/>
           					<button class="btn btn-light btn-block popupbutton" type="submit">Áo</button>
           				</form>
-          				<form action="/category" method="get">
+          				<form action="/list/category" method="get">
+          					<input type="hidden" name="category" th:value="Giày" />
+          					<input type="hidden" name="username" th:value="${username}"/>
           					<button class="btn btn-light btn-block popupbutton" type="submit">Giày</button>
           				</form>
-          				<form action="/category" method="get">
+          				<form action="/list/category" method="get">
+          					<input type="hidden" name="category" th:value="Kính" />
+          					<input type="hidden" name="username" th:value="${username}"/>
           					<button class="btn btn-light btn-block popupbutton" type="submit">Kính</button>
           				</form>
-          				<form action="/category" method="get">
+          				<form action="/list/category" method="get">
+          					<input type="hidden" name="category" th:value="Mũ" />
+          					<input type="hidden" name="username" th:value="${username}"/>
           					<button class="btn btn-light btn-block popupbutton" type="submit">Mũ</button>
           				</form>
-          				<form action="/category" method="get">
+          				<form action="/list/category" method="get">
+          					<input type="hidden" name="category" th:value="Túi" />
+          					<input type="hidden" name="username" th:value="${username}"/>
           					<button class="btn btn-light btn-block popupbutton" type="submit">Túi Xách</button>
           				</form>
         			</div>
@@ -109,15 +133,15 @@
           			</button>
         		</div>
         		<div class="modal-body">
-          			<ul class="list-group">
-            			<li class="list-group-item">Item 1</li>
-            			<li class="list-group-item">Item 2</li>
-            			<li class="list-group-item">Item 3</li>
-          			</ul>
+            			<h5 th:each="product : ${productsCart}" th:text="${product.category} + ' ' +${product.name}+ ' ' +${product.price}+' VND'"></h5>
         		</div>
+        		<h5 th:utext="'   Giỏ hàng : ' +  ${priceSum} + ' VND'"></h5>
         		<div class="modal-footer">
           			<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-          			<button type="button" class="btn btn-primary">Mua</button>
+          			<form action="/buy" method="get">
+          				<input type="hidden" name="username" th:value="${username}"/>
+          				<button type="submit" class="btn btn-primary">Mua</button>
+          			</form>
         		</div>
       		</div>
     	</div>

@@ -1,39 +1,620 @@
-2023-07-30T00:59:28.567+07:00  INFO 6504 --- [restartedMain] com.example.TheAnhShopApplication        : Starting TheAnhShopApplication using Java 17.0.2 with PID 6504 (C:\Users\ADMIN\eclipse-workspace4\TheAnhShop\target\classes started by ADMIN in C:\Users\ADMIN\eclipse-workspace4\TheAnhShop)
-2023-07-30T00:59:28.575+07:00  INFO 6504 --- [restartedMain] com.example.TheAnhShopApplication        : No active profile set, falling back to 1 default profile: "default"
-2023-07-30T00:59:28.623+07:00  INFO 6504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-30T00:59:28.624+07:00  INFO 6504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-30T00:59:29.842+07:00  INFO 6504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-07-30T00:59:29.954+07:00  INFO 6504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 5 JPA repository interfaces.
-2023-07-30T00:59:30.498+07:00  INFO 6504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8077 (http)
-2023-07-30T00:59:30.506+07:00  INFO 6504 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-30T00:59:30.507+07:00  INFO 6504 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-07-30T00:59:30.559+07:00  INFO 6504 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-30T00:59:30.559+07:00  INFO 6504 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1891 ms
-2023-07-30T00:59:30.692+07:00  INFO 6504 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-07-30T00:59:30.734+07:00  INFO 6504 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-07-30T00:59:30.949+07:00  INFO 6504 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-07-30T00:59:31.069+07:00  INFO 6504 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27ce057f
-2023-07-30T00:59:31.071+07:00  INFO 6504 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-07-30T00:59:31.087+07:00  INFO 6504 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-07-30T00:59:31.088+07:00  WARN 6504 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2023-07-30T00:59:31.661+07:00  INFO 6504 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-07-30T00:59:31.669+07:00  INFO 6504 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-07-30T00:59:32.072+07:00  INFO 6504 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-07-30T00:59:32.272+07:00  INFO 6504 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-07-30T00:59:32.305+07:00  INFO 6504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8077 (http) with context path ''
-2023-07-30T00:59:32.315+07:00  INFO 6504 --- [restartedMain] com.example.TheAnhShopApplication        : Started TheAnhShopApplication in 4.069 seconds (process running for 4.546)
-2023-07-30T00:59:32.396+07:00  INFO 6504 --- [http-nio-8077-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-30T00:59:32.396+07:00  INFO 6504 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-30T00:59:32.397+07:00  INFO 6504 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-30T00:59:32.557+07:00  WARN 6504 --- [http-nio-8077-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-1][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
-2023-07-30T00:59:32.567+07:00  WARN 6504 --- [http-nio-8077-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-1][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
-2023-07-30T00:59:34.332+07:00  WARN 6504 --- [http-nio-8077-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-3][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
-2023-07-30T00:59:34.332+07:00  WARN 6504 --- [http-nio-8077-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-3][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
-2023-07-30T00:59:35.441+07:00  WARN 6504 --- [http-nio-8077-exec-9] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-9][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
-2023-07-30T00:59:35.442+07:00  WARN 6504 --- [http-nio-8077-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-9][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
-2023-07-30T01:36:05.017+07:00  INFO 6504 --- [RMI TCP Connection(40)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2023-07-30T01:36:05.035+07:00  INFO 6504 --- [RMI TCP Connection(40)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-07-30T01:36:05.037+07:00  INFO 6504 --- [RMI TCP Connection(40)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-07-30T01:36:05.052+07:00  INFO 6504 --- [RMI TCP Connection(40)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-07-30T01:36:05.056+07:00  INFO 6504 --- [RMI TCP Connection(40)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-07-30T01:36:05.059+07:00  INFO 6504 --- [RMI TCP Connection(40)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-17T00:28:52.003+07:00  INFO 9220 --- [RMI TCP Connection(273)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-08-17T00:28:52.099+07:00  INFO 9220 --- [RMI TCP Connection(273)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-17T00:28:52.103+07:00  INFO 9220 --- [RMI TCP Connection(273)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-17T00:28:52.125+07:00  INFO 9220 --- [RMI TCP Connection(273)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T00:28:52.143+07:00  INFO 9220 --- [RMI TCP Connection(273)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-08-17T00:28:52.145+07:00  INFO 9220 --- [RMI TCP Connection(273)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-08-17T00:28:53.981+07:00  INFO 19220 --- [restartedMain] com.example.TheAnhShopApplication        : Starting TheAnhShopApplication using Java 17.0.2 with PID 19220 (C:\Users\ADMIN\eclipse-workspace4\TheAnhShop\target\classes started by ADMIN in C:\Users\ADMIN\eclipse-workspace4\TheAnhShop)
+2023-08-17T00:28:53.983+07:00  INFO 19220 --- [restartedMain] com.example.TheAnhShopApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-17T00:28:54.020+07:00  INFO 19220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-17T00:28:54.020+07:00  INFO 19220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-17T00:28:54.457+07:00  INFO 19220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T00:28:54.507+07:00  INFO 19220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2023-08-17T00:28:55.080+07:00  INFO 19220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8077 (http)
+2023-08-17T00:28:55.089+07:00  INFO 19220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-17T00:28:55.090+07:00  INFO 19220 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-08-17T00:28:55.149+07:00  INFO 19220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-17T00:28:55.149+07:00  INFO 19220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1128 ms
+2023-08-17T00:28:55.275+07:00  INFO 19220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T00:28:55.320+07:00  INFO 19220 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-08-17T00:28:55.543+07:00  INFO 19220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-17T00:28:55.672+07:00  INFO 19220 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@576481f8
+2023-08-17T00:28:55.674+07:00  INFO 19220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-17T00:28:55.690+07:00  INFO 19220 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-08-17T00:28:55.691+07:00  WARN 19220 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-17T00:28:56.397+07:00  INFO 19220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T00:28:56.410+07:00  INFO 19220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T00:28:57.428+07:00  INFO 19220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T00:28:57.480+07:00  INFO 19220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8077 (http) with context path ''
+2023-08-17T00:28:57.488+07:00  INFO 19220 --- [restartedMain] com.example.TheAnhShopApplication        : Started TheAnhShopApplication in 3.775 seconds (process running for 4.288)
+2023-08-17T00:28:57.554+07:00  INFO 19220 --- [http-nio-8077-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-17T00:28:57.554+07:00  INFO 19220 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-17T00:28:57.555+07:00  INFO 19220 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-17T00:28:59.346+07:00  WARN 19220 --- [http-nio-8077-exec-8] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-8][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T00:28:59.359+07:00  WARN 19220 --- [http-nio-8077-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-8][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T00:29:03.034+07:00  WARN 19220 --- [http-nio-8077-exec-9] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-9][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T00:29:03.034+07:00  WARN 19220 --- [http-nio-8077-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-9][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T00:29:14.194+07:00  WARN 19220 --- [http-nio-8077-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-2][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T00:29:14.194+07:00  WARN 19220 --- [http-nio-8077-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-2][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T00:29:17.013+07:00  WARN 19220 --- [http-nio-8077-exec-6] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-6][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T00:29:17.013+07:00  WARN 19220 --- [http-nio-8077-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-6][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T00:29:19.797+07:00  WARN 19220 --- [http-nio-8077-exec-8] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T00:29:19.797+07:00  WARN 19220 --- [http-nio-8077-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T00:47:08.594+07:00  INFO 19220 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-17T00:47:08.605+07:00  INFO 19220 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-17T00:47:08.607+07:00  INFO 19220 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-17T00:47:08.616+07:00  INFO 19220 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T00:47:08.619+07:00  INFO 19220 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-17T00:47:08.627+07:00  INFO 19220 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-17T00:47:08.685+07:00  INFO 19220 --- [restartedMain] com.example.TheAnhShopApplication        : Starting TheAnhShopApplication using Java 17.0.2 with PID 19220 (C:\Users\ADMIN\eclipse-workspace4\TheAnhShop\target\classes started by ADMIN in C:\Users\ADMIN\eclipse-workspace4\TheAnhShop)
+2023-08-17T00:47:08.685+07:00  INFO 19220 --- [restartedMain] com.example.TheAnhShopApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-17T00:47:08.864+07:00  INFO 19220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T00:47:08.880+07:00  INFO 19220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2023-08-17T00:47:08.950+07:00  INFO 19220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8077 (http)
+2023-08-17T00:47:08.951+07:00  INFO 19220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-17T00:47:08.951+07:00  INFO 19220 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-08-17T00:47:08.967+07:00  INFO 19220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-17T00:47:08.967+07:00  INFO 19220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 280 ms
+2023-08-17T00:47:08.993+07:00  INFO 19220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T00:47:08.997+07:00  INFO 19220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-08-17T00:47:09.000+07:00  INFO 19220 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68f9f252
+2023-08-17T00:47:09.000+07:00  INFO 19220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-08-17T00:47:09.001+07:00  INFO 19220 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-08-17T00:47:09.001+07:00  WARN 19220 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-17T00:47:09.062+07:00  INFO 19220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T00:47:09.063+07:00  INFO 19220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T00:47:09.284+07:00  INFO 19220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T00:47:09.294+07:00  INFO 19220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8077 (http) with context path ''
+2023-08-17T00:47:09.297+07:00  INFO 19220 --- [restartedMain] com.example.TheAnhShopApplication        : Started TheAnhShopApplication in 0.632 seconds (process running for 1096.097)
+2023-08-17T00:47:09.299+07:00  INFO 19220 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T00:47:12.004+07:00  INFO 19220 --- [http-nio-8077-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-17T00:47:12.005+07:00  INFO 19220 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-17T00:47:12.007+07:00  INFO 19220 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-17T00:47:12.022+07:00  WARN 19220 --- [http-nio-8077-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-1][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T00:47:12.022+07:00  WARN 19220 --- [http-nio-8077-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-1][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T00:47:13.096+07:00  WARN 19220 --- [http-nio-8077-exec-7] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-7][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T00:47:13.096+07:00  WARN 19220 --- [http-nio-8077-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-7][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T00:47:14.840+07:00  WARN 19220 --- [http-nio-8077-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-1][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T00:47:14.840+07:00  WARN 19220 --- [http-nio-8077-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-1][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T00:47:18.439+07:00  WARN 19220 --- [http-nio-8077-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T00:47:18.439+07:00  WARN 19220 --- [http-nio-8077-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T00:47:28.884+07:00  INFO 19220 --- [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-08-17T00:47:28.895+07:00  INFO 19220 --- [RMI TCP Connection(22)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-17T00:47:28.896+07:00  INFO 19220 --- [RMI TCP Connection(22)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-17T00:47:28.900+07:00  INFO 19220 --- [RMI TCP Connection(22)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T00:47:28.901+07:00  INFO 19220 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-08-17T00:47:28.902+07:00  INFO 19220 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-08-17T08:15:34.233+07:00  INFO 10768 --- [restartedMain] com.example.TheAnhShopApplication        : Starting TheAnhShopApplication using Java 17.0.2 with PID 10768 (C:\Users\ADMIN\eclipse-workspace4\TheAnhShop\target\classes started by ADMIN in C:\Users\ADMIN\eclipse-workspace4\TheAnhShop)
+2023-08-17T08:15:34.237+07:00  INFO 10768 --- [restartedMain] com.example.TheAnhShopApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-17T08:15:34.298+07:00  INFO 10768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-17T08:15:34.299+07:00  INFO 10768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-17T08:15:35.469+07:00  INFO 10768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T08:15:35.599+07:00  INFO 10768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 4 JPA repository interfaces.
+2023-08-17T08:15:36.598+07:00  INFO 10768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8077 (http)
+2023-08-17T08:15:36.612+07:00  INFO 10768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-17T08:15:36.612+07:00  INFO 10768 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-08-17T08:15:36.694+07:00  INFO 10768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-17T08:15:36.695+07:00  INFO 10768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2395 ms
+2023-08-17T08:15:36.882+07:00  INFO 10768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T08:15:36.970+07:00  INFO 10768 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-08-17T08:15:37.346+07:00  INFO 10768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-17T08:15:37.548+07:00  INFO 10768 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d8c6e5a
+2023-08-17T08:15:37.551+07:00  INFO 10768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-17T08:15:37.573+07:00  INFO 10768 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-08-17T08:15:37.575+07:00  WARN 10768 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-17T08:15:38.458+07:00  INFO 10768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T08:15:38.471+07:00  INFO 10768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T08:15:39.600+07:00  INFO 10768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T08:15:39.647+07:00  INFO 10768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8077 (http) with context path ''
+2023-08-17T08:15:39.656+07:00  INFO 10768 --- [restartedMain] com.example.TheAnhShopApplication        : Started TheAnhShopApplication in 6.507 seconds (process running for 9.671)
+2023-08-17T08:15:39.850+07:00  INFO 10768 --- [http-nio-8077-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-17T08:15:39.851+07:00  INFO 10768 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-17T08:15:39.853+07:00  INFO 10768 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-17T08:15:41.486+07:00  WARN 10768 --- [http-nio-8077-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [264] milliseconds.
+2023-08-17T08:15:41.761+07:00  WARN 10768 --- [http-nio-8077-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-3][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:15:41.776+07:00  WARN 10768 --- [http-nio-8077-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-3][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:15:43.517+07:00  WARN 10768 --- [http-nio-8077-exec-9] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-9][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:15:43.517+07:00  WARN 10768 --- [http-nio-8077-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-9][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:15:52.459+07:00  WARN 10768 --- [http-nio-8077-exec-9] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-9][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:15:52.459+07:00  WARN 10768 --- [http-nio-8077-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-9][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:15:58.825+07:00  WARN 10768 --- [http-nio-8077-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:15:58.825+07:00  WARN 10768 --- [http-nio-8077-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:24:48.319+07:00 ERROR 10768 --- [http-nio-8077-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: Null value was assigned to a property [class com.example.demo.dto.Product.sale] of primitive type : `com.example.demo.dto.Product.sale` (setter)] with root cause
+
+java.lang.IllegalArgumentException: Can not set int field com.example.demo.dto.Product.sale to null value
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167) ~[na:na]
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171) ~[na:na]
+	at java.base/jdk.internal.reflect.UnsafeIntegerFieldAccessorImpl.set(UnsafeIntegerFieldAccessorImpl.java:80) ~[na:na]
+	at java.base/java.lang.reflect.Field.set(Field.java:799) ~[na:na]
+	at org.hibernate.property.access.spi.SetterFieldImpl.set(SetterFieldImpl.java:53) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.setPropertyValues(AbstractEntityPersister.java:5155) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeEntity(AbstractEntityInitializer.java:844) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeInstance(AbstractEntityInitializer.java:787) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.sql.results.internal.StandardRowReader.coordinateInitializers(StandardRowReader.java:152) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.sql.results.internal.StandardRowReader.readRow(StandardRowReader.java:97) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:198) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:443) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:166) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:91) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$0(ConcreteSqmSelectQueryPlan.java:113) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:335) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:276) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:571) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:363) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.list(QuerySqmImpl.java:1073) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:94) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:403) ~[spring-data-jpa-3.0.6.jar:3.0.6]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:89) ~[spring-data-jpa-3.0.6.jar:3.0.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:288) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:77) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:163) ~[spring-data-jpa-3.0.6.jar:3.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.0.9.jar:6.0.9]
+	at jdk.proxy4/jdk.proxy4.$Proxy108.findAll(Unknown Source) ~[na:na]
+	at com.example.demo.service.ProductService.getAllProduct(ProductService.java:46) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702) ~[spring-aop-6.0.9.jar:6.0.9]
+	at com.example.demo.service.ProductService$$SpringCGLIB$$0.getAllProduct(<generated>) ~[classes/:na]
+	at com.example.demo.controller.ListController.buyProduct(ListController.java:163) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-08-17T08:25:06.702+07:00  WARN 10768 --- [http-nio-8077-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-2][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:25:06.703+07:00  WARN 10768 --- [http-nio-8077-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-2][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:26:50.071+07:00  WARN 10768 --- [http-nio-8077-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-2][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:26:50.071+07:00  WARN 10768 --- [http-nio-8077-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-2][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:27:12.957+07:00  WARN 10768 --- [http-nio-8077-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:27:12.957+07:00  WARN 10768 --- [http-nio-8077-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:27:23.873+07:00  WARN 10768 --- [http-nio-8077-exec-8] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:27:23.873+07:00  WARN 10768 --- [http-nio-8077-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:55:43.948+07:00  INFO 10768 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-17T08:55:43.960+07:00  INFO 10768 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-17T08:55:43.962+07:00  INFO 10768 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-17T08:55:43.971+07:00  INFO 10768 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T08:55:43.974+07:00  INFO 10768 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-17T08:55:43.977+07:00  INFO 10768 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-17T08:55:44.043+07:00  INFO 10768 --- [restartedMain] com.example.TheAnhShopApplication        : Starting TheAnhShopApplication using Java 17.0.2 with PID 10768 (C:\Users\ADMIN\eclipse-workspace4\TheAnhShop\target\classes started by ADMIN in C:\Users\ADMIN\eclipse-workspace4\TheAnhShop)
+2023-08-17T08:55:44.043+07:00  INFO 10768 --- [restartedMain] com.example.TheAnhShopApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-17T08:55:44.164+07:00  INFO 10768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T08:55:44.176+07:00  INFO 10768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 4 JPA repository interfaces.
+2023-08-17T08:55:44.253+07:00  INFO 10768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8077 (http)
+2023-08-17T08:55:44.254+07:00  INFO 10768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-17T08:55:44.254+07:00  INFO 10768 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-08-17T08:55:44.266+07:00  INFO 10768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-17T08:55:44.266+07:00  INFO 10768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 221 ms
+2023-08-17T08:55:44.290+07:00  INFO 10768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T08:55:44.295+07:00  INFO 10768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-08-17T08:55:44.298+07:00  INFO 10768 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d1694a0
+2023-08-17T08:55:44.299+07:00  INFO 10768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-08-17T08:55:44.299+07:00  INFO 10768 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-08-17T08:55:44.299+07:00  WARN 10768 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-17T08:55:44.363+07:00  INFO 10768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T08:55:44.364+07:00  INFO 10768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T08:55:44.561+07:00  INFO 10768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T08:55:44.573+07:00  INFO 10768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8077 (http) with context path ''
+2023-08-17T08:55:44.577+07:00  INFO 10768 --- [restartedMain] com.example.TheAnhShopApplication        : Started TheAnhShopApplication in 0.559 seconds (process running for 2414.592)
+2023-08-17T08:55:44.579+07:00  INFO 10768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T08:55:49.308+07:00  INFO 10768 --- [http-nio-8077-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-17T08:55:49.309+07:00  INFO 10768 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-17T08:55:49.312+07:00  INFO 10768 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-17T08:55:50.404+07:00  WARN 10768 --- [http-nio-8077-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-3][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:55:50.404+07:00  WARN 10768 --- [http-nio-8077-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-3][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:55:51.775+07:00  WARN 10768 --- [http-nio-8077-exec-8] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:55:51.775+07:00  WARN 10768 --- [http-nio-8077-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:55:53.265+07:00 ERROR 10768 --- [http-nio-8077-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "cartProductIds" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "cartProductIds" is null
+	at com.example.demo.controller.ListController.addCart(ListController.java:130) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-08-17T08:56:27.763+07:00  INFO 10768 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-17T08:56:27.771+07:00  INFO 10768 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-17T08:56:27.773+07:00  INFO 10768 --- [Thread-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-17T08:56:27.776+07:00  INFO 10768 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T08:56:27.777+07:00  INFO 10768 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-08-17T08:56:27.779+07:00  INFO 10768 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-08-17T08:56:27.844+07:00  INFO 10768 --- [restartedMain] com.example.TheAnhShopApplication        : Starting TheAnhShopApplication using Java 17.0.2 with PID 10768 (C:\Users\ADMIN\eclipse-workspace4\TheAnhShop\target\classes started by ADMIN in C:\Users\ADMIN\eclipse-workspace4\TheAnhShop)
+2023-08-17T08:56:27.845+07:00  INFO 10768 --- [restartedMain] com.example.TheAnhShopApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-17T08:56:27.940+07:00  INFO 10768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T08:56:27.951+07:00  INFO 10768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2023-08-17T08:56:28.013+07:00  INFO 10768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8077 (http)
+2023-08-17T08:56:28.014+07:00  INFO 10768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-17T08:56:28.014+07:00  INFO 10768 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-08-17T08:56:28.024+07:00  INFO 10768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-17T08:56:28.024+07:00  INFO 10768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 177 ms
+2023-08-17T08:56:28.048+07:00  INFO 10768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T08:56:28.053+07:00  INFO 10768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-08-17T08:56:28.056+07:00  INFO 10768 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b78f195
+2023-08-17T08:56:28.056+07:00  INFO 10768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-08-17T08:56:28.057+07:00  INFO 10768 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-08-17T08:56:28.057+07:00  WARN 10768 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-17T08:56:28.117+07:00  INFO 10768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T08:56:28.118+07:00  INFO 10768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T08:56:28.274+07:00  INFO 10768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T08:56:28.282+07:00  INFO 10768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8077 (http) with context path ''
+2023-08-17T08:56:28.285+07:00  INFO 10768 --- [restartedMain] com.example.TheAnhShopApplication        : Started TheAnhShopApplication in 0.46 seconds (process running for 2458.3)
+2023-08-17T08:56:28.286+07:00  INFO 10768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T08:56:29.848+07:00  INFO 10768 --- [http-nio-8077-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-17T08:56:29.848+07:00  INFO 10768 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-17T08:56:29.849+07:00  INFO 10768 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-17T08:56:30.856+07:00  WARN 10768 --- [http-nio-8077-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-2][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:56:30.856+07:00  WARN 10768 --- [http-nio-8077-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-2][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:56:31.818+07:00  WARN 10768 --- [http-nio-8077-exec-8] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:56:31.819+07:00  WARN 10768 --- [http-nio-8077-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:56:33.420+07:00  WARN 10768 --- [http-nio-8077-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:56:33.420+07:00  WARN 10768 --- [http-nio-8077-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:56:39.029+07:00  WARN 10768 --- [http-nio-8077-exec-10] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-10][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:56:39.029+07:00  WARN 10768 --- [http-nio-8077-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-10][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:56:41.648+07:00  WARN 10768 --- [http-nio-8077-exec-8] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T08:56:41.648+07:00  WARN 10768 --- [http-nio-8077-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T08:56:53.337+07:00  INFO 10768 --- [RMI TCP Connection(46)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-08-17T08:56:53.347+07:00  INFO 10768 --- [RMI TCP Connection(46)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-17T08:56:53.348+07:00  INFO 10768 --- [RMI TCP Connection(46)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-17T08:56:53.351+07:00  INFO 10768 --- [RMI TCP Connection(46)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T08:56:53.352+07:00  INFO 10768 --- [RMI TCP Connection(46)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-08-17T08:56:53.353+07:00  INFO 10768 --- [RMI TCP Connection(46)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-08-17T09:20:52.273+07:00  INFO 1764 --- [restartedMain] com.example.TheAnhShopApplication        : Starting TheAnhShopApplication using Java 17.0.2 with PID 1764 (C:\Users\ADMIN\eclipse-workspace4\TheAnhShop\target\classes started by ADMIN in C:\Users\ADMIN\eclipse-workspace4\TheAnhShop)
+2023-08-17T09:20:52.275+07:00  INFO 1764 --- [restartedMain] com.example.TheAnhShopApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-17T09:20:52.330+07:00  INFO 1764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-17T09:20:52.331+07:00  INFO 1764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-17T09:20:53.023+07:00  INFO 1764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T09:20:53.100+07:00  INFO 1764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2023-08-17T09:20:53.709+07:00  INFO 1764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8077 (http)
+2023-08-17T09:20:53.764+07:00  INFO 1764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-17T09:20:53.764+07:00  INFO 1764 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-08-17T09:20:53.850+07:00  INFO 1764 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-17T09:20:53.851+07:00  INFO 1764 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1520 ms
+2023-08-17T09:20:54.026+07:00  INFO 1764 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T09:20:54.104+07:00  INFO 1764 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-08-17T09:20:54.422+07:00  INFO 1764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-17T09:20:54.652+07:00  INFO 1764 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4be2f5e0
+2023-08-17T09:20:54.655+07:00  INFO 1764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-17T09:20:54.678+07:00  INFO 1764 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-08-17T09:20:54.681+07:00  WARN 1764 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-17T09:20:55.437+07:00  INFO 1764 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T09:20:55.447+07:00  INFO 1764 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T09:20:57.137+07:00  INFO 1764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T09:20:57.191+07:00  INFO 1764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8077 (http) with context path ''
+2023-08-17T09:20:57.205+07:00  INFO 1764 --- [restartedMain] com.example.TheAnhShopApplication        : Started TheAnhShopApplication in 5.39 seconds (process running for 6.393)
+2023-08-17T09:20:59.185+07:00  INFO 1764 --- [http-nio-8077-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-17T09:20:59.185+07:00  INFO 1764 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-17T09:20:59.188+07:00  INFO 1764 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-17T09:21:28.053+07:00  WARN 1764 --- [http-nio-8077-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-5][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:21:28.077+07:00  WARN 1764 --- [http-nio-8077-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-5][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:22:28.083+07:00  INFO 1764 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-17T09:22:28.130+07:00  INFO 1764 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-17T09:22:28.136+07:00  INFO 1764 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-17T09:22:28.168+07:00  INFO 1764 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T09:22:28.176+07:00  INFO 1764 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-17T09:22:28.207+07:00  INFO 1764 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-17T09:22:28.386+07:00  INFO 1764 --- [restartedMain] com.example.TheAnhShopApplication        : Starting TheAnhShopApplication using Java 17.0.2 with PID 1764 (C:\Users\ADMIN\eclipse-workspace4\TheAnhShop\target\classes started by ADMIN in C:\Users\ADMIN\eclipse-workspace4\TheAnhShop)
+2023-08-17T09:22:28.387+07:00  INFO 1764 --- [restartedMain] com.example.TheAnhShopApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-17T09:22:28.579+07:00  INFO 1764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T09:22:28.598+07:00  INFO 1764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 4 JPA repository interfaces.
+2023-08-17T09:22:28.709+07:00  INFO 1764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8077 (http)
+2023-08-17T09:22:28.710+07:00  INFO 1764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-17T09:22:28.710+07:00  INFO 1764 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-08-17T09:22:28.727+07:00  INFO 1764 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-17T09:22:28.727+07:00  INFO 1764 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 337 ms
+2023-08-17T09:22:28.764+07:00  INFO 1764 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T09:22:28.771+07:00  INFO 1764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-08-17T09:22:28.775+07:00  INFO 1764 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1547f98f
+2023-08-17T09:22:28.776+07:00  INFO 1764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-08-17T09:22:28.777+07:00  INFO 1764 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-08-17T09:22:28.777+07:00  WARN 1764 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-17T09:22:28.895+07:00  INFO 1764 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T09:22:28.896+07:00  INFO 1764 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T09:22:29.269+07:00  INFO 1764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T09:22:29.288+07:00  INFO 1764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8077 (http) with context path ''
+2023-08-17T09:22:29.294+07:00  INFO 1764 --- [restartedMain] com.example.TheAnhShopApplication        : Started TheAnhShopApplication in 0.97 seconds (process running for 98.482)
+2023-08-17T09:22:29.296+07:00  INFO 1764 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T09:22:30.529+07:00  INFO 1764 --- [http-nio-8077-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-17T09:22:30.530+07:00  INFO 1764 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-17T09:22:30.533+07:00  INFO 1764 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-08-17T09:22:30.618+07:00  WARN 1764 --- [http-nio-8077-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-1][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:22:30.619+07:00  WARN 1764 --- [http-nio-8077-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-1][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:22:32.884+07:00  WARN 1764 --- [http-nio-8077-exec-7] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-7][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:22:32.885+07:00  WARN 1764 --- [http-nio-8077-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-7][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:22:37.040+07:00  WARN 1764 --- [http-nio-8077-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:22:37.040+07:00  WARN 1764 --- [http-nio-8077-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:22:39.787+07:00  WARN 1764 --- [http-nio-8077-exec-8] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:22:39.787+07:00  WARN 1764 --- [http-nio-8077-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:22:53.975+07:00  WARN 1764 --- [http-nio-8077-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-5][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:22:53.975+07:00  WARN 1764 --- [http-nio-8077-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-5][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:23:39.459+07:00  WARN 1764 --- [http-nio-8077-exec-9] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-9][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:23:39.459+07:00  WARN 1764 --- [http-nio-8077-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-9][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:24:12.712+07:00  WARN 1764 --- [http-nio-8077-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-1][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:24:12.712+07:00  WARN 1764 --- [http-nio-8077-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-1][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:26:17.030+07:00  WARN 1764 --- [http-nio-8077-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-2][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:26:17.038+07:00  WARN 1764 --- [http-nio-8077-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-2][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:28:58.654+07:00  WARN 1764 --- [http-nio-8077-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:28:58.654+07:00  WARN 1764 --- [http-nio-8077-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-4][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:29:43.304+07:00  WARN 1764 --- [http-nio-8077-exec-8] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:29:43.304+07:00  WARN 1764 --- [http-nio-8077-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-8][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:30:15.542+07:00  WARN 1764 --- [http-nio-8077-exec-7] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-7][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:30:15.550+07:00  WARN 1764 --- [http-nio-8077-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-7][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:30:33.024+07:00  WARN 1764 --- [http-nio-8077-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-2][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:30:33.024+07:00  WARN 1764 --- [http-nio-8077-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-2][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:30:35.174+07:00  WARN 1764 --- [http-nio-8077-exec-10] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-10][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:30:35.174+07:00  WARN 1764 --- [http-nio-8077-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-10][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:30:52.157+07:00  WARN 1764 --- [http-nio-8077-exec-9] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-9][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:30:52.157+07:00  WARN 1764 --- [http-nio-8077-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-9][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:31:24.509+07:00  WARN 1764 --- [http-nio-8077-exec-6] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-6][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:31:24.509+07:00  WARN 1764 --- [http-nio-8077-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-6][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:48:53.616+07:00  WARN 1764 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=9m56s447ms669µs700ns).
+2023-08-17T09:49:02.203+07:00  INFO 1764 --- [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-08-17T09:49:02.214+07:00  INFO 1764 --- [RMI TCP Connection(22)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-17T09:49:02.215+07:00  INFO 1764 --- [RMI TCP Connection(22)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-17T09:49:02.219+07:00  INFO 1764 --- [RMI TCP Connection(22)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T09:49:02.220+07:00  INFO 1764 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-08-17T09:49:02.222+07:00  INFO 1764 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-08-17T09:51:24.969+07:00  INFO 8868 --- [restartedMain] com.example.TheAnhShopApplication        : Starting TheAnhShopApplication using Java 17.0.2 with PID 8868 (C:\Users\ADMIN\eclipse-workspace4\TheAnhShop\target\classes started by ADMIN in C:\Users\ADMIN\eclipse-workspace4\TheAnhShop)
+2023-08-17T09:51:24.971+07:00  INFO 8868 --- [restartedMain] com.example.TheAnhShopApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-17T09:51:25.013+07:00  INFO 8868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-17T09:51:25.013+07:00  INFO 8868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-17T09:51:25.427+07:00  INFO 8868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T09:51:25.481+07:00  INFO 8868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2023-08-17T09:51:25.914+07:00  INFO 8868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8077 (http)
+2023-08-17T09:51:25.923+07:00  INFO 8868 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-17T09:51:25.923+07:00  INFO 8868 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-08-17T09:51:25.980+07:00  INFO 8868 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-17T09:51:25.981+07:00  INFO 8868 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 967 ms
+2023-08-17T09:51:26.118+07:00  INFO 8868 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T09:51:26.158+07:00  INFO 8868 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-08-17T09:51:26.380+07:00  INFO 8868 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-17T09:51:26.505+07:00  INFO 8868 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64ec7484
+2023-08-17T09:51:26.507+07:00  INFO 8868 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-17T09:51:26.521+07:00  INFO 8868 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-08-17T09:51:26.522+07:00  WARN 8868 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-17T09:51:27.125+07:00  INFO 8868 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T09:51:27.132+07:00  INFO 8868 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T09:51:27.826+07:00  INFO 8868 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T09:51:27.857+07:00  INFO 8868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8077 (http) with context path ''
+2023-08-17T09:51:27.866+07:00  INFO 8868 --- [restartedMain] com.example.TheAnhShopApplication        : Started TheAnhShopApplication in 3.184 seconds (process running for 3.733)
+2023-08-17T09:51:27.899+07:00  INFO 8868 --- [http-nio-8077-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-17T09:51:27.900+07:00  INFO 8868 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-17T09:51:27.901+07:00  INFO 8868 --- [http-nio-8077-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-08-17T09:51:29.573+07:00  WARN 8868 --- [http-nio-8077-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-2][home.html] Deprecated attribute {th:include,data-th-include} found in template home.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:51:29.585+07:00  WARN 8868 --- [http-nio-8077-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-2][home.html] Deprecated unwrapped fragment expression "template.html" found in template home.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:51:32.875+07:00  WARN 8868 --- [http-nio-8077-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-3][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:51:32.875+07:00  WARN 8868 --- [http-nio-8077-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-3][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:51:34.362+07:00  WARN 8868 --- [http-nio-8077-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-1][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:51:34.363+07:00  WARN 8868 --- [http-nio-8077-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-1][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:51:39.608+07:00  WARN 8868 --- [http-nio-8077-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-3][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:51:39.609+07:00  WARN 8868 --- [http-nio-8077-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-3][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:51:41.453+07:00  WARN 8868 --- [http-nio-8077-exec-1] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8077-exec-1][list.html] Deprecated attribute {th:include,data-th-include} found in template list.html, line 11, col 12. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2023-08-17T09:51:41.454+07:00  WARN 8868 --- [http-nio-8077-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8077-exec-1][list.html] Deprecated unwrapped fragment expression "template.html" found in template list.html, line 11, col 12. Please use the complete syntax of fragment expressions instead ("~{template.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-08-17T09:55:17.802+07:00  INFO 8868 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-08-17T09:55:17.814+07:00  INFO 8868 --- [RMI TCP Connection(7)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-17T09:55:17.816+07:00  INFO 8868 --- [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-17T09:55:17.821+07:00  WARN 8868 --- [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot serialize session attribute [cartProductIds] for session [A2B34A2E14FAF1092C43A3402E068A39]
+
+java.io.NotSerializableException: com.example.demo.dto.Product
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1197) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:354) ~[na:na]
+	at java.base/java.util.ArrayList.writeObject(ArrayList.java:866) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.base/java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:1201) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1526) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1448) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1191) ~[na:na]
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:354) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1625) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1050) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:317) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:268) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:384) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5121) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:936) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:936) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:491) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:966) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:495) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:273) ~[spring-boot-3.0.7.jar:3.0.7]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:331) ~[spring-boot-3.0.7.jar:3.0.7]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.stop(WebServerStartStopLifecycle.java:53) ~[spring-boot-3.0.7.jar:3.0.7]
+	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:234) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:373) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:206) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:129) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1069) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173) ~[spring-boot-3.0.7.jar:3.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1027) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.0.7.jar:3.0.7]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-08-17T09:55:17.833+07:00  INFO 8868 --- [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T09:55:17.836+07:00  INFO 8868 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-17T09:55:17.844+07:00  INFO 8868 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

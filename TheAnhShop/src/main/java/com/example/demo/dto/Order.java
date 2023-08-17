@@ -17,8 +17,23 @@ public class Order {
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@Column(unique = true)
 	private int customerid;
 	private Date time;
+	private int price;
+	private int isPaid;
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public int getIsPaid() {
+		return isPaid;
+	}
+	public void setIsPaid(int isPaid) {
+		this.isPaid = isPaid;
+	}
 	public int getId() {
 		return id;
 	}
